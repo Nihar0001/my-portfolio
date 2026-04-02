@@ -1,17 +1,276 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  title="Nihar Narvekar | Full Stack & AI/ML Developer"
+  description="Full Stack Developer building scalable backend systems, CRM workflows, and AI-driven applications."
+>
+
+  <!-- Header -->
+  <header class="relative z-10 px-6 md:px-12 py-6 opacity-0 animate-fade-in">
+    <div class="max-w-5xl mx-auto flex items-center justify-between">
+      <a href="/" class="font-display font-bold text-lg tracking-tight text-gray-900 dark:text-white hover:text-accent transition-colors duration-300">
+        nihar narvekar
+      </a>
+      <button
+        id="theme-toggle"
+        type="button"
+        class="p-2 rounded-lg text-gray-500 dark:text-neutral-500 hover:text-accent transition-colors duration-300"
+        aria-label="Toggle dark mode"
+      >
+        <!-- Sun icon (visible in dark mode) -->
+        <svg class="w-5 h-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+        </svg>
+        <!-- Moon icon (visible in light mode) -->
+        <svg class="w-5 h-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="relative z-10">
+    <section class="pt-16 md:pt-24 pb-20 px-6 md:px-12">
+      <div class="max-w-5xl mx-auto w-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+
+          <!-- Text Content -->
+          <div class="order-2 md:order-1 text-center md:text-left">
+
+            <h1 class="font-display font-extrabold text-5xl md:text-6xl lg:text-7xl leading-[1.08] tracking-tight opacity-0 animate-fade-up stagger-1">
+              Hey, I'm<br>
+              Nihar <span class="inline-block animate-wave origin-[70%_70%]">👋</span>
+            </h1>
+
+            <!-- Role Badges -->
+            <div class="flex flex-wrap gap-3 mt-7 justify-center md:justify-start opacity-0 animate-fade-up stagger-2">
+              <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium border border-accent/30 dark:border-accent/20 text-accent bg-accent/[0.08] dark:bg-accent/[0.06]">
+                <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+                Full Stack Developer
+              </span>
+              <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium border border-violet-400/30 dark:border-violet-400/20 text-violet-500 dark:text-violet-400 bg-violet-400/[0.08] dark:bg-violet-400/[0.06]">
+                <span class="w-1.5 h-1.5 rounded-full bg-violet-400"></span>
+                AI/ML Engineer
+              </span>
+              <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium border border-gray-300/50 dark:border-neutral-700 text-gray-600 dark:text-neutral-300 bg-gray-100/60 dark:bg-neutral-900/60">
+                <span class="w-1.5 h-1.5 rounded-full bg-gray-400 dark:bg-neutral-500"></span>
+                Laravel + Flask
+              </span>
+            </div>
+
+            <!-- Tagline -->
+            <p class="mt-6 text-lg md:text-xl text-gray-500 dark:text-neutral-400 leading-relaxed max-w-lg mx-auto md:mx-0 opacity-0 animate-fade-up stagger-3">
+              I build scalable backend systems, clean REST APIs, and intelligent products powered by computer vision and predictive modeling.
+            </p>
+
+            <!-- Terminal Line -->
+            <div class="mt-4 font-mono text-sm text-gray-400 dark:text-neutral-600 opacity-0 animate-fade-up stagger-4">
+              <span class="text-accent">$</span> shipping CRM workflows, real-time apps, and ML pipelines<span class="animate-blink">_</span>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex flex-wrap items-center gap-4 mt-10 justify-center md:justify-start opacity-0 animate-fade-up stagger-5">
+              <span class="text-[11px] font-mono text-gray-400 dark:text-neutral-600 uppercase tracking-[0.2em]">find me</span>
+              <div class="h-px w-6 bg-gray-300 dark:bg-neutral-800"></div>
+
+              <!-- GitHub -->
+              <a href="https://github.com/Nihar0001" target="_blank" rel="noopener noreferrer" class="text-gray-400 dark:text-neutral-600 hover:text-accent transition-colors duration-300" aria-label="GitHub">
+                <svg class="w-[18px] h-[18px]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-gray-500 dark:text-neutral-400 hover:text-accent transition-colors duration-300">linkedin</a>
+              <a href="mailto:narvekarnihar2204@gmail.com" class="text-xs font-mono text-gray-500 dark:text-neutral-400 hover:text-accent transition-colors duration-300">email</a>
+              <a href="tel:+919422512747" class="text-xs font-mono text-gray-500 dark:text-neutral-400 hover:text-accent transition-colors duration-300">call</a>
+              <span class="text-xs font-mono text-gray-400 dark:text-neutral-600">Ratnagiri, Maharashtra</span>
+            </div>
+
+          </div>
+
+          <!-- Profile Image -->
+          <div class="order-1 md:order-2 flex justify-center opacity-0 animate-fade-up stagger-2">
+            <div class="relative group">
+              <!-- Glow effect behind image on hover -->
+              <div class="absolute -inset-1 bg-gradient-to-br from-accent/40 to-violet-500/40 rounded-2xl blur-md opacity-0 dark:opacity-50 group-hover:opacity-40 dark:group-hover:opacity-75 transition-opacity duration-700"></div>
+              <img
+                src="/profile.jpg"
+                alt="Nihar Narvekar"
+                class="relative w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-2xl object-cover border border-gray-200 dark:border-neutral-800/80"
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About + Skills -->
+    <section class="pb-20 px-6 md:px-12">
+      <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <article class="lg:col-span-2 rounded-2xl border border-gray-200/70 dark:border-neutral-800/80 bg-white/70 dark:bg-neutral-950/50 backdrop-blur-sm p-6 md:p-7 opacity-0 animate-fade-up stagger-2">
+          <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400 dark:text-neutral-600">summary</p>
+          <h2 class="mt-3 font-display text-2xl md:text-3xl font-bold tracking-tight">Building products where backend reliability meets intelligent automation.</h2>
+          <p class="mt-4 text-gray-600 dark:text-neutral-400 leading-relaxed">
+            Full Stack Developer with hands-on experience in Laravel and Flask, REST API design, and relational database management.
+            I have built CRM workflows, automated lead and payment processes, and production-facing machine learning solutions across healthcare,
+            agriculture, EV analytics, and real-time attendance systems.
+          </p>
+        </article>
+
+        <article class="rounded-2xl border border-gray-200/70 dark:border-neutral-800/80 bg-white/70 dark:bg-neutral-950/50 backdrop-blur-sm p-6 md:p-7 opacity-0 animate-fade-up stagger-3">
+          <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400 dark:text-neutral-600">contact</p>
+          <ul class="mt-4 space-y-3 text-sm text-gray-600 dark:text-neutral-400">
+            <li><span class="text-gray-400 dark:text-neutral-600">Email:</span> narvekarnihar2204@gmail.com</li>
+            <li><span class="text-gray-400 dark:text-neutral-600">Phone:</span> +91 94225 12747</li>
+            <li><span class="text-gray-400 dark:text-neutral-600">Location:</span> Pachal, Ratnagiri</li>
+            <li><span class="text-gray-400 dark:text-neutral-600">GitHub:</span> github.com/Nihar0001</li>
+            <li><span class="text-gray-400 dark:text-neutral-600">LinkedIn:</span> linkedin.com/in/yourhandle</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="max-w-5xl mx-auto mt-6 rounded-2xl border border-gray-200/70 dark:border-neutral-800/80 bg-white/70 dark:bg-neutral-950/50 backdrop-blur-sm p-6 md:p-7 opacity-0 animate-fade-up stagger-4">
+        <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400 dark:text-neutral-600">skills</p>
+        <div class="mt-4 flex flex-wrap gap-2.5 text-sm">
+          <span class="px-3 py-1.5 rounded-full border border-accent/30 dark:border-accent/20 text-accent bg-accent/[0.08] dark:bg-accent/[0.06]">Flask</span>
+          <span class="px-3 py-1.5 rounded-full border border-accent/30 dark:border-accent/20 text-accent bg-accent/[0.08] dark:bg-accent/[0.06]">Laravel</span>
+          <span class="px-3 py-1.5 rounded-full border border-accent/30 dark:border-accent/20 text-accent bg-accent/[0.08] dark:bg-accent/[0.06]">REST APIs</span>
+          <span class="px-3 py-1.5 rounded-full border border-violet-400/30 dark:border-violet-400/20 text-violet-500 dark:text-violet-400 bg-violet-400/[0.08] dark:bg-violet-400/[0.06]">PostgreSQL</span>
+          <span class="px-3 py-1.5 rounded-full border border-violet-400/30 dark:border-violet-400/20 text-violet-500 dark:text-violet-400 bg-violet-400/[0.08] dark:bg-violet-400/[0.06]">MySQL</span>
+          <span class="px-3 py-1.5 rounded-full border border-violet-400/30 dark:border-violet-400/20 text-violet-500 dark:text-violet-400 bg-violet-400/[0.08] dark:bg-violet-400/[0.06]">MongoDB</span>
+          <span class="px-3 py-1.5 rounded-full border border-gray-300/50 dark:border-neutral-700 text-gray-600 dark:text-neutral-300 bg-gray-100/60 dark:bg-neutral-900/60">React.js</span>
+          <span class="px-3 py-1.5 rounded-full border border-gray-300/50 dark:border-neutral-700 text-gray-600 dark:text-neutral-300 bg-gray-100/60 dark:bg-neutral-900/60">System Design</span>
+          <span class="px-3 py-1.5 rounded-full border border-gray-300/50 dark:border-neutral-700 text-gray-600 dark:text-neutral-300 bg-gray-100/60 dark:bg-neutral-900/60">Computer Vision</span>
+          <span class="px-3 py-1.5 rounded-full border border-gray-300/50 dark:border-neutral-700 text-gray-600 dark:text-neutral-300 bg-gray-100/60 dark:bg-neutral-900/60">Predictive Modeling</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="pb-20 px-6 md:px-12">
+      <div class="max-w-5xl mx-auto opacity-0 animate-fade-up stagger-2">
+        <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400 dark:text-neutral-600">work experience</p>
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
+            <h3 class="font-semibold">Backend Developer Intern · Pleximus Inc.</h3>
+            <p class="mt-1 text-xs font-mono text-gray-400 dark:text-neutral-600">Feb 2026 - Present · Ratnagiri</p>
+            <ul class="mt-3 list-disc pl-5 text-sm text-gray-600 dark:text-neutral-400 space-y-1.5">
+              <li>Developing CRM backend with Laravel and PostgreSQL, including API and data design.</li>
+              <li>Building async lead/payment workflows to improve system responsiveness.</li>
+            </ul>
+          </article>
+
+          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
+            <h3 class="font-semibold">AI &amp; ML Intern · InLighnX Global Pvt. Ltd.</h3>
+            <p class="mt-1 text-xs font-mono text-gray-400 dark:text-neutral-600">Nov 2025 - Dec 2025</p>
+            <ul class="mt-3 list-disc pl-5 text-sm text-gray-600 dark:text-neutral-400 space-y-1.5">
+              <li>Optimized deep learning models for autonomous navigation and diagnostics.</li>
+              <li>Improved training quality by resolving data conflicts and filtering criteria.</li>
+            </ul>
+          </article>
+
+          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
+            <h3 class="font-semibold">AI &amp; ML Intern · Innovate</h3>
+            <p class="mt-1 text-xs font-mono text-gray-400 dark:text-neutral-600">Jul 2025 - Aug 2025</p>
+            <ul class="mt-3 list-disc pl-5 text-sm text-gray-600 dark:text-neutral-400 space-y-1.5">
+              <li>Completed intensive AI/ML internship with practical model-building focus.</li>
+              <li>Delivered real-time object detection using SSD architecture.</li>
+            </ul>
+          </article>
+
+          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
+            <h3 class="font-semibold">Data Science Intern · Feynn Labs</h3>
+            <p class="mt-1 text-xs font-mono text-gray-400 dark:text-neutral-600">May 2025 - Jul 2025</p>
+            <ul class="mt-3 list-disc pl-5 text-sm text-gray-600 dark:text-neutral-400 space-y-1.5">
+              <li>Applied ML and analytics to real-world datasets in collaborative projects.</li>
+              <li>Resolved coding bottlenecks by driving root-cause discussions with the team.</li>
+            </ul>
+          </article>
+
+          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50 md:col-span-2">
+            <h3 class="font-semibold">Intern · Veda Infotech</h3>
+            <p class="mt-1 text-xs font-mono text-gray-400 dark:text-neutral-600">Nov 2023 - Dec 2023</p>
+            <ul class="mt-3 list-disc pl-5 text-sm text-gray-600 dark:text-neutral-400 space-y-1.5">
+              <li>Collaborated on sustainability-focused marketing strategy and communication assets.</li>
+              <li>Created clear media outputs that improved delivery of procedures and goals.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="pb-20 px-6 md:px-12">
+      <div class="max-w-5xl mx-auto opacity-0 animate-fade-up stagger-3">
+        <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400 dark:text-neutral-600">selected projects</p>
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
+            <h3 class="font-semibold">Hybrid Diabetic Retinopathy Detection (CNN + ML)</h3>
+            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">Trained on 10,000+ retinal images, reached 92% accuracy, and deployed as an Android APK for sub-1.2s screening.</p>
+          </article>
+          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
+            <h3 class="font-semibold">Smart Crop Advisor (CNN)</h3>
+            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">Improved recommendation accuracy by around 20% and generated practical suggestions across 8+ crop types.</p>
+          </article>
+          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
+            <h3 class="font-semibold">EV Customer Segmentation (K-Means + EDA)</h3>
+            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">Analyzed 15,000+ records, found 4 market segments, and improved targeting insights by 30%.</p>
+          </article>
+          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
+            <h3 class="font-semibold">Facial Recognition Attendance (Python, OpenCV, Flask)</h3>
+            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">Built real-time attendance with 98% recognition accuracy and reduced manual processing by around 85%.</p>
+          </article>
+          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50 md:col-span-2">
+            <h3 class="font-semibold">Foodies Goodies Website</h3>
+            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">Developed a full stack app with interactive 3D UI, recipe API integration, and BMI-based personalized diet recommendations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education + Certifications -->
+    <section class="pb-20 px-6 md:px-12">
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 opacity-0 animate-fade-up stagger-4">
+        <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
+          <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400 dark:text-neutral-600">education</p>
+          <h3 class="mt-3 font-semibold">RMCET, Ambav · Mumbai University</h3>
+          <p class="text-sm text-gray-600 dark:text-neutral-400">Bachelor of Engineering · Nov 2022 - Present</p>
+          <p class="mt-1 text-sm text-gray-500 dark:text-neutral-500">Avg. CGPA: ~8.2 / 10.0</p>
+          <h3 class="mt-4 font-semibold">SV. &amp; Jr. College, Pachal</h3>
+          <p class="text-sm text-gray-600 dark:text-neutral-400">HSC · Jul 2021 - May 2022</p>
+          <p class="mt-1 text-sm text-gray-500 dark:text-neutral-500">Percentage: 75 / 100</p>
+        </article>
+
+        <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
+          <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400 dark:text-neutral-600">certifications</p>
+          <ul class="mt-3 list-disc pl-5 text-sm text-gray-600 dark:text-neutral-400 space-y-2">
+            <li>From Learner to Builder: Become an AI Agent Architect - IBM Skills Build</li>
+            <li>Data Analytics Workshop: Netflix Trends Analysis - Crio.Do</li>
+            <li>Deloitte Australia Data Analytics Job Simulation - Forage</li>
+            <li>JPMorgan Chase &amp; Co. Quantitative Research Virtual Experience - Forage</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-10 py-8 text-center">
+    <p class="text-xs font-mono text-gray-300 dark:text-neutral-800">Nihar Narvekar &mdash; 2026</p>
+  </footer>
+
+  <!-- Blinking cursor animation -->
+  <style>
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+    .animate-blink {
+      animation: blink 1s step-end infinite;
+    }
+  </style>
+
+</BaseLayout>
