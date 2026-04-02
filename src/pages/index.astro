@@ -4,258 +4,412 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout
   title="Nihar Narvekar | Full Stack & AI/ML Developer"
-  description="Full Stack Developer building scalable backend systems, CRM workflows, and AI-driven applications."
+  description="Nihar Narvekar is a Full Stack Developer focused on backend systems, REST APIs, and AI-driven applications."
 >
+  <main class="page">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Nihar Narvekar</p>
+        <p class="subtle">Full Stack Developer · AI/ML Engineer</p>
+      </div>
+      <p class="subtle right">Pachal, Ratnagiri</p>
+    </header>
 
-  <!-- Header -->
-  <header class="relative z-10 px-6 md:px-12 py-6 opacity-0 animate-fade-in">
-    <div class="max-w-5xl mx-auto flex items-center justify-between">
-      <a href="/" class="font-display font-bold text-lg tracking-tight text-gray-900 dark:text-white hover:text-accent transition-colors duration-300">
-        nihar narvekar
-      </a>
-    </div>
-  </header>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">Backend Developer Intern at Pleximus Inc.</p>
+        <h1>Nihar Narvekar</h1>
+        <p class="lead">
+          Full Stack Developer with hands-on experience in Laravel, Flask, REST API development, PostgreSQL, MySQL,
+          and AI/ML projects focused on computer vision and predictive modeling.
+        </p>
 
-  <!-- Hero Section -->
-  <main class="relative z-10">
-    <section class="pt-16 md:pt-24 pb-20 px-6 md:px-12">
-      <div class="max-w-5xl mx-auto w-full">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <p class="terminal">
+          <span>$</span> shipping CRM workflows, real-time apps, and ML pipelines<span class="cursor">_</span>
+        </p>
 
-          <!-- Text Content -->
-          <div class="order-2 md:order-1 text-center md:text-left">
-
-            <h1 class="font-display font-extrabold text-5xl md:text-6xl lg:text-7xl leading-[1.08] tracking-tight opacity-0 animate-fade-up stagger-1">
-              Hey, I'm<br>
-              Nihar <span class="inline-block animate-wave origin-[70%_70%]">👋</span>
-            </h1>
-
-            <!-- Role Badges -->
-            <div class="flex flex-wrap gap-3 mt-7 justify-center md:justify-start opacity-0 animate-fade-up stagger-2">
-              <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium border border-accent/30 dark:border-accent/20 text-accent bg-accent/[0.08] dark:bg-accent/[0.06]">
-                <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
-                Full Stack Developer
-              </span>
-              <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium border border-violet-400/30 dark:border-violet-400/20 text-violet-500 dark:text-violet-400 bg-violet-400/[0.08] dark:bg-violet-400/[0.06]">
-                <span class="w-1.5 h-1.5 rounded-full bg-violet-400"></span>
-                AI/ML Engineer
-              </span>
-              <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium border border-gray-300/50 dark:border-neutral-700 text-gray-600 dark:text-neutral-300 bg-gray-100/60 dark:bg-neutral-900/60">
-                <span class="w-1.5 h-1.5 rounded-full bg-gray-400 dark:bg-neutral-500"></span>
-                Laravel + Flask
-              </span>
-            </div>
-
-            <!-- Tagline -->
-            <p class="mt-6 text-lg md:text-xl text-gray-500 dark:text-neutral-400 leading-relaxed max-w-lg mx-auto md:mx-0 opacity-0 animate-fade-up stagger-3">
-              I build scalable backend systems, clean REST APIs, and intelligent products powered by computer vision and predictive modeling.
-            </p>
-
-            <!-- Terminal Line -->
-            <div class="mt-4 font-mono text-sm text-gray-400 dark:text-neutral-600 opacity-0 animate-fade-up stagger-4">
-              <span class="text-accent">$</span> shipping CRM workflows, real-time apps, and ML pipelines<span class="animate-blink">_</span>
-            </div>
-
-            <!-- Social Links -->
-            <div class="flex flex-wrap items-center gap-4 mt-10 justify-center md:justify-start opacity-0 animate-fade-up stagger-5">
-              <span class="text-[11px] font-mono text-gray-400 dark:text-neutral-600 uppercase tracking-[0.2em]">find me</span>
-              <div class="h-px w-6 bg-gray-300 dark:bg-neutral-800"></div>
-
-              <!-- GitHub -->
-              <a href="https://github.com/Nihar0001" target="_blank" rel="noopener noreferrer" class="text-gray-400 dark:text-neutral-600 hover:text-accent transition-colors duration-300" aria-label="GitHub">
-                <svg class="w-[18px] h-[18px]" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-                </svg>
-              </a>
-              <a href="https://www.linkedin.com/in/nihar-narvekar-professional/" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-gray-500 dark:text-neutral-400 hover:text-accent transition-colors duration-300">linkedin</a>
-              <a href="mailto:narvekarnihar2204@gmail.com" class="text-xs font-mono text-gray-500 dark:text-neutral-400 hover:text-accent transition-colors duration-300">email</a>
-              <a href="tel:+919422512747" class="text-xs font-mono text-gray-500 dark:text-neutral-400 hover:text-accent transition-colors duration-300">call</a>
-              <span class="text-xs font-mono text-gray-400 dark:text-neutral-600">Ratnagiri, Maharashtra</span>
-            </div>
-
-          </div>
-
-          <!-- Profile Image -->
-          <div class="order-1 md:order-2 flex justify-center opacity-0 animate-fade-up stagger-2">
-            <div class="relative group">
-              <!-- Glow effect behind image on hover -->
-              <div class="absolute -inset-1 bg-gradient-to-br from-accent/40 to-violet-500/40 rounded-2xl blur-md opacity-0 dark:opacity-50 group-hover:opacity-40 dark:group-hover:opacity-75 transition-opacity duration-700"></div>
-              <img
-                src="/profile.jpg"
-                alt="Nihar Narvekar"
-                class="relative w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-2xl object-cover border border-gray-200 dark:border-neutral-800/80"
-              />
-            </div>
-          </div>
-
+        <div class="links">
+          <a href="https://github.com/Nihar0001" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/nihar-narvekar-professional/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:narvekarnihar2204@gmail.com">Email</a>
+          <a href="tel:+919422512747">Call</a>
         </div>
       </div>
+
+      <div class="profile-card">
+        <img src="/profile.jpg" alt="Nihar Narvekar" />
+      </div>
     </section>
 
-    <!-- About + Skills -->
-    <section class="pb-20 px-6 md:px-12">
-      <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <article class="lg:col-span-2 rounded-2xl border border-gray-200/70 dark:border-neutral-800/80 bg-white/70 dark:bg-neutral-950/50 backdrop-blur-sm p-6 md:p-7 opacity-0 animate-fade-up stagger-2">
-          <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400 dark:text-neutral-600">summary</p>
-          <h2 class="mt-3 font-display text-2xl md:text-3xl font-bold tracking-tight">Building products where backend reliability meets intelligent automation.</h2>
-          <p class="mt-4 text-gray-600 dark:text-neutral-400 leading-relaxed">
-            Full Stack Developer with hands-on experience in Laravel and Flask, REST API design, and relational database management.
-            I have built CRM workflows, automated lead and payment processes, and production-facing machine learning solutions across healthcare,
-            agriculture, EV analytics, and real-time attendance systems.
-          </p>
-        </article>
+    <section class="section-grid">
+      <article class="card wide">
+        <p class="section-label">Summary</p>
+        <p>
+          I build scalable backend systems, clean REST APIs, and practical AI solutions. My recent work includes CRM
+          backend development, workflow automation, real-time object detection, and medical / agricultural ML pipelines.
+        </p>
+      </article>
 
-        <article class="rounded-2xl border border-gray-200/70 dark:border-neutral-800/80 bg-white/70 dark:bg-neutral-950/50 backdrop-blur-sm p-6 md:p-7 opacity-0 animate-fade-up stagger-3">
-          <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400 dark:text-neutral-600">contact</p>
-          <ul class="mt-4 space-y-3 text-sm text-gray-600 dark:text-neutral-400">
-            <li><span class="text-gray-400 dark:text-neutral-600">Email:</span> narvekarnihar2204@gmail.com</li>
-            <li><span class="text-gray-400 dark:text-neutral-600">Phone:</span> +91 94225 12747</li>
-            <li><span class="text-gray-400 dark:text-neutral-600">Location:</span> Pachal, Ratnagiri</li>
-            <li><span class="text-gray-400 dark:text-neutral-600">GitHub:</span> github.com/Nihar0001</li>
-            <li><span class="text-gray-400 dark:text-neutral-600">LinkedIn:</span> linkedin.com/in/nihar-narvekar-professional</li>
-          </ul>
-        </article>
-      </div>
+      <article class="card">
+        <p class="section-label">Skills</p>
+        <ul class="tag-list">
+          <li>Flask</li>
+          <li>Laravel</li>
+          <li>REST APIs</li>
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+          <li>React.js</li>
+          <li>System Design</li>
+          <li>Computer Vision</li>
+          <li>Predictive Modeling</li>
+        </ul>
+      </article>
 
-      <div class="max-w-5xl mx-auto mt-6 rounded-2xl border border-gray-200/70 dark:border-neutral-800/80 bg-white/70 dark:bg-neutral-950/50 backdrop-blur-sm p-6 md:p-7 opacity-0 animate-fade-up stagger-4">
-        <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400 dark:text-neutral-600">skills</p>
-        <div class="mt-4 flex flex-wrap gap-2.5 text-sm">
-          <span class="px-3 py-1.5 rounded-full border border-accent/30 dark:border-accent/20 text-accent bg-accent/[0.08] dark:bg-accent/[0.06]">Flask</span>
-          <span class="px-3 py-1.5 rounded-full border border-accent/30 dark:border-accent/20 text-accent bg-accent/[0.08] dark:bg-accent/[0.06]">Laravel</span>
-          <span class="px-3 py-1.5 rounded-full border border-accent/30 dark:border-accent/20 text-accent bg-accent/[0.08] dark:bg-accent/[0.06]">REST APIs</span>
-          <span class="px-3 py-1.5 rounded-full border border-violet-400/30 dark:border-violet-400/20 text-violet-500 dark:text-violet-400 bg-violet-400/[0.08] dark:bg-violet-400/[0.06]">PostgreSQL</span>
-          <span class="px-3 py-1.5 rounded-full border border-violet-400/30 dark:border-violet-400/20 text-violet-500 dark:text-violet-400 bg-violet-400/[0.08] dark:bg-violet-400/[0.06]">MySQL</span>
-          <span class="px-3 py-1.5 rounded-full border border-violet-400/30 dark:border-violet-400/20 text-violet-500 dark:text-violet-400 bg-violet-400/[0.08] dark:bg-violet-400/[0.06]">MongoDB</span>
-          <span class="px-3 py-1.5 rounded-full border border-gray-300/50 dark:border-neutral-700 text-gray-600 dark:text-neutral-300 bg-gray-100/60 dark:bg-neutral-900/60">React.js</span>
-          <span class="px-3 py-1.5 rounded-full border border-gray-300/50 dark:border-neutral-700 text-gray-600 dark:text-neutral-300 bg-gray-100/60 dark:bg-neutral-900/60">System Design</span>
-          <span class="px-3 py-1.5 rounded-full border border-gray-300/50 dark:border-neutral-700 text-gray-600 dark:text-neutral-300 bg-gray-100/60 dark:bg-neutral-900/60">Computer Vision</span>
-          <span class="px-3 py-1.5 rounded-full border border-gray-300/50 dark:border-neutral-700 text-gray-600 dark:text-neutral-300 bg-gray-100/60 dark:bg-neutral-900/60">Predictive Modeling</span>
+      <article class="card wide">
+        <p class="section-label">Experience</p>
+        <div class="list-block">
+          <h3>Pleximus Inc. · Backend Developer Intern</h3>
+          <p>Feb 2026 - Present · Building CRM backend, APIs, and async workflows with Laravel and PostgreSQL.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section class="pb-20 px-6 md:px-12">
-      <div class="max-w-5xl mx-auto opacity-0 animate-fade-up stagger-2">
-        <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400 dark:text-neutral-600">work experience</p>
-        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
-            <h3 class="font-semibold">Backend Developer Intern · Pleximus Inc.</h3>
-            <p class="mt-1 text-xs font-mono text-gray-400 dark:text-neutral-600">Feb 2026 - Present · Ratnagiri</p>
-            <ul class="mt-3 list-disc pl-5 text-sm text-gray-600 dark:text-neutral-400 space-y-1.5">
-              <li>Developing CRM backend with Laravel and PostgreSQL, including API and data design.</li>
-              <li>Building async lead/payment workflows to improve system responsiveness.</li>
-            </ul>
-          </article>
-
-          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
-            <h3 class="font-semibold">AI &amp; ML Intern · InLighnX Global Pvt. Ltd.</h3>
-            <p class="mt-1 text-xs font-mono text-gray-400 dark:text-neutral-600">Nov 2025 - Dec 2025</p>
-            <ul class="mt-3 list-disc pl-5 text-sm text-gray-600 dark:text-neutral-400 space-y-1.5">
-              <li>Optimized deep learning models for autonomous navigation and diagnostics.</li>
-              <li>Improved training quality by resolving data conflicts and filtering criteria.</li>
-            </ul>
-          </article>
-
-          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
-            <h3 class="font-semibold">AI &amp; ML Intern · Innovate</h3>
-            <p class="mt-1 text-xs font-mono text-gray-400 dark:text-neutral-600">Jul 2025 - Aug 2025</p>
-            <ul class="mt-3 list-disc pl-5 text-sm text-gray-600 dark:text-neutral-400 space-y-1.5">
-              <li>Completed intensive AI/ML internship with practical model-building focus.</li>
-              <li>Delivered real-time object detection using SSD architecture.</li>
-            </ul>
-          </article>
-
-          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
-            <h3 class="font-semibold">Data Science Intern · Feynn Labs</h3>
-            <p class="mt-1 text-xs font-mono text-gray-400 dark:text-neutral-600">May 2025 - Jul 2025</p>
-            <ul class="mt-3 list-disc pl-5 text-sm text-gray-600 dark:text-neutral-400 space-y-1.5">
-              <li>Applied ML and analytics to real-world datasets in collaborative projects.</li>
-              <li>Resolved coding bottlenecks by driving root-cause discussions with the team.</li>
-            </ul>
-          </article>
-
-          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50 md:col-span-2">
-            <h3 class="font-semibold">Intern · Veda Infotech</h3>
-            <p class="mt-1 text-xs font-mono text-gray-400 dark:text-neutral-600">Nov 2023 - Dec 2023</p>
-            <ul class="mt-3 list-disc pl-5 text-sm text-gray-600 dark:text-neutral-400 space-y-1.5">
-              <li>Collaborated on sustainability-focused marketing strategy and communication assets.</li>
-              <li>Created clear media outputs that improved delivery of procedures and goals.</li>
-            </ul>
-          </article>
+        <div class="list-block">
+          <h3>InLighnX Global Pvt. Ltd. · AI & ML Intern</h3>
+          <p>Nov 2025 - Dec 2025 · Optimized production-ready deep learning models for navigation and diagnostics.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="pb-20 px-6 md:px-12">
-      <div class="max-w-5xl mx-auto opacity-0 animate-fade-up stagger-3">
-        <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400 dark:text-neutral-600">selected projects</p>
-        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
-            <h3 class="font-semibold">Hybrid Diabetic Retinopathy Detection (CNN + ML)</h3>
-            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">Trained on 10,000+ retinal images, reached 92% accuracy, and deployed as an Android APK for sub-1.2s screening.</p>
-          </article>
-          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
-            <h3 class="font-semibold">Smart Crop Advisor (CNN)</h3>
-            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">Improved recommendation accuracy by around 20% and generated practical suggestions across 8+ crop types.</p>
-          </article>
-          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
-            <h3 class="font-semibold">EV Customer Segmentation (K-Means + EDA)</h3>
-            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">Analyzed 15,000+ records, found 4 market segments, and improved targeting insights by 30%.</p>
-          </article>
-          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
-            <h3 class="font-semibold">Facial Recognition Attendance (Python, OpenCV, Flask)</h3>
-            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">Built real-time attendance with 98% recognition accuracy and reduced manual processing by around 85%.</p>
-          </article>
-          <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50 md:col-span-2">
-            <h3 class="font-semibold">Foodies Goodies Website</h3>
-            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">Developed a full stack app with interactive 3D UI, recipe API integration, and BMI-based personalized diet recommendations.</p>
-          </article>
+        <div class="list-block">
+          <h3>Innovate · AI & ML Intern</h3>
+          <p>Jul 2025 - Aug 2025 · Completed real-time object detection project using SSD.</p>
         </div>
-      </div>
+        <div class="list-block">
+          <h3>Feynn Labs · Data Science Intern</h3>
+          <p>May 2025 - Jul 2025 · Applied machine learning and data analysis to real-world datasets.</p>
+        </div>
+      </article>
+
+      <article class="card wide">
+        <p class="section-label">Projects</p>
+        <div class="list-block">
+          <h3>Hybrid Diabetic Retinopathy Detection</h3>
+          <p>CNN + ML hybrid classifier trained on 10,000+ images, achieving 92% accuracy and Android APK deployment.</p>
+        </div>
+        <div class="list-block">
+          <h3>Smart Crop Advisor</h3>
+          <p>CNN-based crop recommendation model improved accuracy by around 20% after tuning and augmentation.</p>
+        </div>
+        <div class="list-block">
+          <h3>Facial Recognition Attendance System</h3>
+          <p>Python, OpenCV, and Flask attendance system with 98% recognition accuracy and automated daily logs.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <p class="section-label">Education</p>
+        <div class="list-block">
+          <h3>RMCET, Ambav</h3>
+          <p>B.E. · Mumbai University · Nov 2022 - Present · CGPA ~8.2 / 10.0</p>
+        </div>
+        <div class="list-block">
+          <h3>SV. & Jr. College, Pachal</h3>
+          <p>HSC · Jul 2021 - May 2022 · 75 / 100</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <p class="section-label">Certifications</p>
+        <ul class="simple-list">
+          <li>IBM Skills Build - AI Agent Architect</li>
+          <li>Crio.Do - Netflix Trends Analysis</li>
+          <li>Forage - Deloitte Australia Data Analytics</li>
+          <li>Forage - JPMorgan Quantitative Research</li>
+        </ul>
+      </article>
     </section>
 
-    <!-- Education + Certifications -->
-    <section class="pb-20 px-6 md:px-12">
-      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 opacity-0 animate-fade-up stagger-4">
-        <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
-          <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400 dark:text-neutral-600">education</p>
-          <h3 class="mt-3 font-semibold">RMCET, Ambav · Mumbai University</h3>
-          <p class="text-sm text-gray-600 dark:text-neutral-400">Bachelor of Engineering · Nov 2022 - Present</p>
-          <p class="mt-1 text-sm text-gray-500 dark:text-neutral-500">Avg. CGPA: ~8.2 / 10.0</p>
-          <h3 class="mt-4 font-semibold">SV. &amp; Jr. College, Pachal</h3>
-          <p class="text-sm text-gray-600 dark:text-neutral-400">HSC · Jul 2021 - May 2022</p>
-          <p class="mt-1 text-sm text-gray-500 dark:text-neutral-500">Percentage: 75 / 100</p>
-        </article>
-
-        <article class="rounded-xl border border-gray-200/70 dark:border-neutral-800/80 p-5 bg-white/70 dark:bg-neutral-950/50">
-          <p class="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400 dark:text-neutral-600">certifications</p>
-          <ul class="mt-3 list-disc pl-5 text-sm text-gray-600 dark:text-neutral-400 space-y-2">
-            <li>From Learner to Builder: Become an AI Agent Architect - IBM Skills Build</li>
-            <li>Data Analytics Workshop: Netflix Trends Analysis - Crio.Do</li>
-            <li>Deloitte Australia Data Analytics Job Simulation - Forage</li>
-            <li>JPMorgan Chase &amp; Co. Quantitative Research Virtual Experience - Forage</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+    <footer class="footer">
+      <p>Nihar Narvekar · 2026</p>
+    </footer>
   </main>
 
-  <!-- Footer -->
-  <footer class="relative z-10 py-8 text-center">
-    <p class="text-xs font-mono text-gray-300 dark:text-neutral-800">Nihar Narvekar &mdash; 2026</p>
-  </footer>
-
-  <!-- Blinking cursor animation -->
   <style>
+    :global(body) {
+      margin: 0;
+      font-family: "Outfit", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(125, 211, 196, 0.16), transparent 26%),
+        radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.14), transparent 22%),
+        #060606;
+      color: #f5f5f5;
+    }
+
+    :global(*) {
+      box-sizing: border-box;
+    }
+
+    :global(a) {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 24px 20px 40px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 28px;
+    }
+
+    .eyebrow,
+    .section-label,
+    .kicker,
+    .subtle,
+    .terminal,
+    .simple-list,
+    .list-block p,
+    .footer {
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    .eyebrow {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .subtle {
+      margin: 6px 0 0;
+      color: rgba(245, 245, 245, 0.62);
+      font-size: 0.8rem;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(240px, 0.85fr);
+      gap: 28px;
+      align-items: center;
+      padding: 24px 0 40px;
+    }
+
+    .hero-copy h1 {
+      margin: 8px 0 0;
+      font-family: "Syne", sans-serif;
+      font-size: clamp(3rem, 8vw, 5.8rem);
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+    }
+
+    .kicker {
+      margin: 0;
+      color: #7dd3c4;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .lead {
+      margin: 18px 0 0;
+      max-width: 62ch;
+      font-size: 1.08rem;
+      line-height: 1.75;
+      color: rgba(245, 245, 245, 0.78);
+    }
+
+    .terminal {
+      margin: 18px 0 0;
+      color: rgba(245, 245, 245, 0.68);
+      font-size: 0.95rem;
+    }
+
+    .terminal span {
+      color: #7dd3c4;
+    }
+
+    .cursor {
+      animation: blink 1s step-end infinite;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-top: 24px;
+    }
+
+    .links a {
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.04);
+      color: rgba(245, 245, 245, 0.9);
+    }
+
+    .links a:hover {
+      border-color: rgba(125, 211, 196, 0.4);
+      color: #7dd3c4;
+    }
+
+    .profile-card {
+      justify-self: end;
+      width: min(100%, 360px);
+      aspect-ratio: 1 / 1;
+      padding: 14px;
+      border-radius: 28px;
+      background: linear-gradient(145deg, rgba(125, 211, 196, 0.16), rgba(168, 85, 247, 0.16));
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+    }
+
+    .profile-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      grid-column: span 6;
+      padding: 20px;
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
+    }
+
+    .wide {
+      grid-column: span 12;
+    }
+
+    .section-label {
+      margin: 0 0 12px;
+      color: rgba(125, 211, 196, 0.9);
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+    }
+
+    .card p,
+    .card li {
+      color: rgba(245, 245, 245, 0.76);
+      line-height: 1.7;
+    }
+
+    .card h3 {
+      margin: 0 0 6px;
+      font-family: "Syne", sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.3;
+    }
+
+    .tag-list,
+    .simple-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag-list li {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.03);
+      color: rgba(245, 245, 245, 0.92);
+      font-size: 0.92rem;
+    }
+
+    .simple-list {
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .simple-list li {
+      padding-left: 14px;
+      border-left: 2px solid rgba(125, 211, 196, 0.45);
+    }
+
+    .list-block + .list-block {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .list-block p {
+      margin: 0;
+      font-size: 0.92rem;
+      color: rgba(245, 245, 245, 0.68);
+    }
+
+    .footer {
+      padding-top: 26px;
+      text-align: center;
+      color: rgba(245, 245, 245, 0.48);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
     @keyframes blink {
       0%, 50% { opacity: 1; }
       51%, 100% { opacity: 0; }
     }
-    .animate-blink {
-      animation: blink 1s step-end infinite;
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-card {
+        justify-self: start;
+        width: min(100%, 320px);
+      }
+
+      .card,
+      .wide {
+        grid-column: span 12;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding-inline: 16px;
+      }
+
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .right {
+        text-align: left;
+      }
+
+      .links a {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
-
 </BaseLayout>
