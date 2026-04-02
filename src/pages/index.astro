@@ -7,7 +7,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="Nihar Narvekar is a Full Stack Developer focused on backend systems, REST APIs, and AI-driven applications."
 >
   <main class="page">
-    <header class="topbar">
+    <header class="topbar reveal reveal-delay-1">
       <div>
         <p class="eyebrow">Nihar Narvekar</p>
         <p class="subtle">Full Stack Developer · AI/ML Engineer</p>
@@ -17,18 +17,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <section class="hero">
       <div class="hero-copy">
-        <p class="kicker">Backend Developer Intern at Pleximus Inc.</p>
-        <h1>Nihar Narvekar</h1>
-        <p class="lead">
+        <p class="kicker reveal reveal-delay-2">Backend Developer Intern at Pleximus Inc.</p>
+        <h1 class="reveal reveal-delay-3">Nihar Narvekar</h1>
+        <p class="lead reveal reveal-delay-4">
           Full Stack Developer with hands-on experience in Laravel, Flask, REST API development, PostgreSQL, MySQL,
           and AI/ML projects focused on computer vision and predictive modeling.
         </p>
 
-        <p class="terminal">
+        <p class="terminal reveal reveal-delay-5">
           <span>$</span> shipping CRM workflows, real-time apps, and ML pipelines<span class="cursor">_</span>
         </p>
 
-        <div class="links">
+        <div class="links reveal reveal-delay-6">
           <a href="https://github.com/Nihar0001" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/nihar-narvekar-professional/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="mailto:narvekarnihar2204@gmail.com">Email</a>
@@ -36,13 +36,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
       </div>
 
-      <div class="profile-card">
+      <div class="profile-card reveal reveal-delay-4">
         <img src="/profile.jpg" alt="Nihar Narvekar" />
       </div>
     </section>
 
     <section class="section-grid">
-      <article class="card wide">
+      <article class="card wide reveal reveal-delay-2">
         <p class="section-label">Summary</p>
         <p>
           I build scalable backend systems, clean REST APIs, and practical AI solutions. My recent work includes CRM
@@ -50,7 +50,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </p>
       </article>
 
-      <article class="card">
+      <article class="card reveal reveal-delay-3">
         <p class="section-label">Skills</p>
         <ul class="tag-list">
           <li>Flask</li>
@@ -66,7 +66,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </ul>
       </article>
 
-      <article class="card wide">
+      <article class="card wide reveal reveal-delay-4">
         <p class="section-label">Experience</p>
         <div class="list-block">
           <h3>Pleximus Inc. · Backend Developer Intern</h3>
@@ -86,7 +86,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
       </article>
 
-      <article class="card wide">
+      <article class="card wide reveal reveal-delay-5">
         <p class="section-label">Projects</p>
         <div class="list-block">
           <h3>Hybrid Diabetic Retinopathy Detection</h3>
@@ -102,7 +102,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal reveal-delay-6">
         <p class="section-label">Education</p>
         <div class="list-block">
           <h3>RMCET, Ambav</h3>
@@ -114,7 +114,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal reveal-delay-7">
         <p class="section-label">Certifications</p>
         <ul class="simple-list">
           <li>IBM Skills Build - AI Agent Architect</li>
@@ -155,6 +155,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       margin: 0 auto;
       padding: 24px 20px 40px;
     }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: reveal-up 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .reveal-delay-1 { animation-delay: 0.08s; }
+    .reveal-delay-2 { animation-delay: 0.16s; }
+    .reveal-delay-3 { animation-delay: 0.26s; }
+    .reveal-delay-4 { animation-delay: 0.36s; }
+    .reveal-delay-5 { animation-delay: 0.46s; }
+    .reveal-delay-6 { animation-delay: 0.56s; }
+    .reveal-delay-7 { animation-delay: 0.66s; }
 
     .topbar {
       display: flex;
@@ -258,6 +272,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .links a:hover {
       border-color: rgba(125, 211, 196, 0.4);
       color: #7dd3c4;
+      transform: translateY(-1px);
     }
 
     .profile-card {
@@ -278,6 +293,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       display: block;
       border-radius: 20px;
       border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: transform 0.55s ease;
+    }
+
+    .profile-card:hover img {
+      transform: scale(1.02);
     }
 
     .section-grid {
@@ -374,6 +394,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     @keyframes blink {
       0%, 50% { opacity: 1; }
       51%, 100% { opacity: 0; }
+    }
+
+    @keyframes reveal-up {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @media (max-width: 900px) {
