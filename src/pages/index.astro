@@ -88,17 +88,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
       <article class="card wide reveal reveal-delay-5">
         <p class="section-label">Projects</p>
-        <div class="list-block">
+        <div class="list-block project-item">
           <h3>Hybrid Diabetic Retinopathy Detection</h3>
           <p>CNN + ML hybrid classifier trained on 10,000+ images, achieving 92% accuracy and Android APK deployment.</p>
+          <a class="project-link" href="https://github.com/Nihar0001?tab=repositories" target="_blank" rel="noopener noreferrer">View GitHub Repo</a>
         </div>
-        <div class="list-block">
+        <div class="list-block project-item">
           <h3>Smart Crop Advisor</h3>
           <p>CNN-based crop recommendation model improved accuracy by around 20% after tuning and augmentation.</p>
+          <a class="project-link" href="https://github.com/Nihar0001?tab=repositories" target="_blank" rel="noopener noreferrer">View GitHub Repo</a>
         </div>
-        <div class="list-block">
+        <div class="list-block project-item">
           <h3>Facial Recognition Attendance System</h3>
           <p>Python, OpenCV, and Flask attendance system with 98% recognition accuracy and automated daily logs.</p>
+          <a class="project-link" href="https://github.com/Nihar0001?tab=repositories" target="_blank" rel="noopener noreferrer">View GitHub Repo</a>
         </div>
       </article>
 
@@ -374,6 +377,54 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       margin-top: 16px;
       padding-top: 16px;
       border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .project-item {
+      position: relative;
+      transition: transform 0.35s ease;
+    }
+
+    .project-item:hover {
+      transform: translateX(4px);
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(125, 211, 196, 0.96);
+      transition: color 0.25s ease, transform 0.25s ease, letter-spacing 0.25s ease;
+    }
+
+    .project-link::after {
+      content: "→";
+      display: inline-block;
+      transition: transform 0.25s ease;
+    }
+
+    .project-link:hover {
+      color: #ffffff;
+      letter-spacing: 0.11em;
+      transform: translateX(3px);
+    }
+
+    .project-link:hover::after {
+      transform: translateX(3px);
+    }
+
+    .project-link:visited {
+      color: rgba(168, 85, 247, 0.92);
+    }
+
+    .project-link:focus-visible {
+      outline: 2px solid rgba(125, 211, 196, 0.8);
+      outline-offset: 4px;
+      border-radius: 6px;
     }
 
     .list-block p {
