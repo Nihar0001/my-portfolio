@@ -36,7 +36,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
       </div>
 
-      <div class="profile-card reveal reveal-delay-4">
+      <div class="profile-card profile-pop reveal reveal-delay-4">
         <img src="/profile.jpg" alt="Nihar Narvekar" />
       </div>
     </section>
@@ -137,6 +137,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     :global(:root) {
       --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
       --ease-pop: cubic-bezier(0.18, 0.89, 0.32, 1.2);
+      --ease-card: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-link: cubic-bezier(0.25, 0.8, 0.25, 1);
+      --ease-photo: cubic-bezier(0.2, 0.75, 0.25, 1.15);
     }
 
     :global(body) {
@@ -201,7 +204,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .reveal {
       opacity: 0;
       transform: translateY(20px);
-      animation: reveal-up 0.95s var(--ease-smooth) forwards;
+      animation: reveal-up 1.15s var(--ease-smooth) forwards;
     }
 
     .reveal-delay-1 { animation-delay: 0.08s; }
@@ -218,7 +221,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       justify-content: space-between;
       gap: 16px;
       padding-bottom: 28px;
-      transition: transform 0.45s var(--ease-smooth);
+      transition: transform 0.55s var(--ease-link);
     }
 
     .topbar:hover {
@@ -317,7 +320,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       border: 1px solid rgba(255, 255, 255, 0.12);
       background: rgba(255, 255, 255, 0.04);
       color: rgba(245, 245, 245, 0.9);
-      transition: transform 0.4s var(--ease-smooth), border-color 0.4s var(--ease-smooth), color 0.35s var(--ease-smooth), background 0.4s var(--ease-smooth), box-shadow 0.4s var(--ease-smooth);
+      transition: transform 0.58s var(--ease-link), border-color 0.48s var(--ease-link), color 0.45s var(--ease-link), background 0.52s var(--ease-link), box-shadow 0.58s var(--ease-link);
     }
 
     .links a::before {
@@ -326,7 +329,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       inset: 0;
       background: linear-gradient(120deg, transparent 20%, rgba(255, 255, 255, 0.16) 45%, transparent 70%);
       transform: translateX(-120%);
-      transition: transform 0.75s var(--ease-smooth);
+      transition: transform 0.95s var(--ease-smooth);
     }
 
     .links a:hover {
@@ -351,12 +354,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       border: 1px solid rgba(255, 255, 255, 0.1);
       box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
       transform-style: preserve-3d;
-      animation: card-float 6.5s ease-in-out infinite;
-      transition: transform 0.55s var(--ease-smooth), box-shadow 0.55s var(--ease-smooth), border-color 0.45s var(--ease-smooth);
+      animation: card-float 7.2s ease-in-out infinite;
+      transition: transform 0.75s var(--ease-photo), box-shadow 0.72s var(--ease-photo), border-color 0.58s var(--ease-photo);
+    }
+
+    .profile-pop.reveal {
+      animation: photo-pop-3d 1.28s var(--ease-photo) forwards;
     }
 
     .profile-card:hover {
-      transform: translateY(-8px) rotateX(4deg) rotateY(-4deg);
+      transform: translateY(-10px) rotateX(5deg) rotateY(-5deg) scale(1.012);
       border-color: rgba(125, 211, 196, 0.42);
       box-shadow: 0 30px 95px rgba(0, 0, 0, 0.44), 0 0 0 1px rgba(125, 211, 196, 0.2);
     }
@@ -368,7 +375,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       display: block;
       border-radius: 20px;
       border: 1px solid rgba(255, 255, 255, 0.08);
-      transition: transform 0.65s var(--ease-smooth), filter 0.5s var(--ease-smooth);
+      transition: transform 0.85s var(--ease-photo), filter 0.72s var(--ease-photo);
     }
 
     .profile-card:hover img {
@@ -394,7 +401,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       backdrop-filter: blur(12px);
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
       transform-style: preserve-3d;
-      transition: transform 0.5s var(--ease-smooth), border-color 0.45s var(--ease-smooth), box-shadow 0.5s var(--ease-smooth), background 0.45s var(--ease-smooth);
+      transition: transform 0.66s var(--ease-card), border-color 0.62s var(--ease-card), box-shadow 0.68s var(--ease-card), background 0.6s var(--ease-card);
     }
 
     .card::before {
@@ -403,7 +410,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       inset: -1px;
       background: linear-gradient(120deg, transparent 35%, rgba(125, 211, 196, 0.14) 50%, transparent 65%);
       transform: translateX(-125%);
-      transition: transform 0.9s var(--ease-smooth);
+      transition: transform 1.08s var(--ease-smooth);
       pointer-events: none;
     }
 
@@ -460,7 +467,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       background: rgba(255, 255, 255, 0.03);
       color: rgba(245, 245, 245, 0.92);
       font-size: 0.92rem;
-      transition: transform 0.35s var(--ease-smooth), border-color 0.35s var(--ease-smooth), color 0.35s var(--ease-smooth), background 0.35s var(--ease-smooth);
+      transition: transform 0.46s var(--ease-link), border-color 0.44s var(--ease-link), color 0.44s var(--ease-link), background 0.44s var(--ease-link);
     }
 
     .tag-list li:hover {
@@ -478,7 +485,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .simple-list li {
       padding-left: 14px;
       border-left: 2px solid rgba(125, 211, 196, 0.45);
-      transition: border-color 0.35s var(--ease-smooth), transform 0.35s var(--ease-smooth), color 0.35s var(--ease-smooth);
+      transition: border-color 0.48s var(--ease-card), transform 0.48s var(--ease-card), color 0.48s var(--ease-card);
     }
 
     .simple-list li:hover {
@@ -496,13 +503,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       position: relative;
       border-radius: 14px;
       padding: 6px 10px 10px;
-      transition: transform 0.45s var(--ease-smooth), background 0.4s var(--ease-smooth);
+      transition: transform 0.6s var(--ease-card), background 0.54s var(--ease-card), box-shadow 0.58s var(--ease-card);
     }
 
     .projects-card .project-item {
       opacity: 0;
       transform: translateY(14px) scale(0.985);
-      animation: project-pop 0.82s var(--ease-pop) forwards;
+      animation: project-pop 1.05s var(--ease-pop) forwards;
     }
 
     .projects-card .project-item:nth-of-type(1) { animation-delay: 0.26s; }
@@ -512,6 +519,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .project-item:hover {
       transform: translateX(4px) translateY(-2px);
       background: rgba(255, 255, 255, 0.04);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
     }
 
     .project-link {
@@ -525,7 +533,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       text-transform: uppercase;
       color: rgba(125, 211, 196, 0.96);
       position: relative;
-      transition: color 0.35s var(--ease-smooth), transform 0.35s var(--ease-smooth), letter-spacing 0.35s var(--ease-smooth);
+      transition: color 0.48s var(--ease-link), transform 0.48s var(--ease-link), letter-spacing 0.48s var(--ease-link);
     }
 
     .project-link::before {
@@ -538,7 +546,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       background: currentColor;
       transform: scaleX(0);
       transform-origin: left;
-      transition: transform 0.35s var(--ease-smooth);
+      transition: transform 0.48s var(--ease-link);
     }
 
     .project-link::after {
@@ -633,6 +641,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       }
     }
 
+    @keyframes photo-pop-3d {
+      0% {
+        opacity: 0;
+        transform: translateY(28px) rotateX(11deg) rotateY(-8deg) scale(0.94);
+      }
+      62% {
+        opacity: 1;
+        transform: translateY(-6px) rotateX(2deg) rotateY(-1deg) scale(1.015);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0) rotateY(0) scale(1);
+      }
+    }
+
     @media (max-width: 900px) {
       .hero {
         grid-template-columns: 1fr;
@@ -683,6 +706,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       :global(body)::before,
       :global(body)::after {
         animation: none !important;
+      }
+
+      .reveal,
+      .projects-card .project-item {
+        opacity: 1 !important;
+        transform: none !important;
       }
 
       .card,
