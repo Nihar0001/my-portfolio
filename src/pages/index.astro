@@ -86,7 +86,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
       </article>
 
-      <article class="card wide reveal reveal-delay-5">
+      <article class="card wide reveal reveal-delay-5 projects-card">
         <p class="section-label">Projects</p>
         <div class="list-block project-item">
           <h3>Hybrid Diabetic Retinopathy Detection</h3>
@@ -179,6 +179,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       justify-content: space-between;
       gap: 16px;
       padding-bottom: 28px;
+      transition: transform 0.35s ease;
+    }
+
+    .topbar:hover {
+      transform: translateY(-2px);
     }
 
     .eyebrow,
@@ -270,6 +275,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       border: 1px solid rgba(255, 255, 255, 0.12);
       background: rgba(255, 255, 255, 0.04);
       color: rgba(245, 245, 245, 0.9);
+      transition: transform 0.25s ease, border-color 0.25s ease, color 0.25s ease, background 0.25s ease;
     }
 
     .links a:hover {
@@ -287,6 +293,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       background: linear-gradient(145deg, rgba(125, 211, 196, 0.16), rgba(168, 85, 247, 0.16));
       border: 1px solid rgba(255, 255, 255, 0.1);
       box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      transition: transform 0.45s ease, box-shadow 0.45s ease, border-color 0.35s ease;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(125, 211, 196, 0.42);
+      box-shadow: 0 30px 95px rgba(0, 0, 0, 0.44), 0 0 0 1px rgba(125, 211, 196, 0.2);
     }
 
     .profile-card img {
@@ -317,6 +330,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       background: rgba(255, 255, 255, 0.04);
       backdrop-filter: blur(12px);
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
+      transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(125, 211, 196, 0.35);
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
     }
 
     .wide {
@@ -361,6 +382,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       background: rgba(255, 255, 255, 0.03);
       color: rgba(245, 245, 245, 0.92);
       font-size: 0.92rem;
+      transition: transform 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+    }
+
+    .tag-list li:hover {
+      transform: translateY(-2px);
+      border-color: rgba(125, 211, 196, 0.35);
+      color: #ffffff;
     }
 
     .simple-list {
@@ -371,6 +399,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .simple-list li {
       padding-left: 14px;
       border-left: 2px solid rgba(125, 211, 196, 0.45);
+      transition: border-color 0.25s ease, transform 0.25s ease;
+    }
+
+    .simple-list li:hover {
+      transform: translateX(3px);
+      border-left-color: rgba(168, 85, 247, 0.8);
     }
 
     .list-block + .list-block {
@@ -384,8 +418,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       transition: transform 0.35s ease;
     }
 
+    .projects-card .project-item {
+      opacity: 0;
+      transform: translateY(14px) scale(0.985);
+      animation: project-pop 0.75s cubic-bezier(0.18, 0.89, 0.32, 1.2) forwards;
+    }
+
+    .projects-card .project-item:nth-of-type(1) { animation-delay: 0.26s; }
+    .projects-card .project-item:nth-of-type(2) { animation-delay: 0.42s; }
+    .projects-card .project-item:nth-of-type(3) { animation-delay: 0.58s; }
+
     .project-item:hover {
-      transform: translateX(4px);
+      transform: translateX(4px) translateY(-2px);
     }
 
     .project-link {
@@ -451,6 +495,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       to {
         opacity: 1;
         transform: translateY(0);
+      }
+    }
+
+    @keyframes project-pop {
+      0% {
+        opacity: 0;
+        transform: translateY(14px) scale(0.985);
+      }
+      65% {
+        opacity: 1;
+        transform: translateY(-3px) scale(1.01);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
       }
     }
 
